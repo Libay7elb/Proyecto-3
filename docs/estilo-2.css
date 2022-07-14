@@ -175,11 +175,12 @@ body{
 .lista-act{
     text-align: center;
     padding: 1em 0;
-    list-style-position:inside;
+   
   
 }
 .items-list{
-    padding: 0.4em;
+    padding: 0.4em; 
+    list-style-position:inside;
 }
 /* Footer */
 /* Footer */
