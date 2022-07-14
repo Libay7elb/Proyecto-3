@@ -422,7 +422,6 @@ body{
 }
 .iconos:hover{
     background: #1c1d1d;
-    transition: 2s;
 }
 .tw{
     background-color: #2076b7;
@@ -432,7 +431,6 @@ body{
 
 }
 .insta{
- 
     background-color: #da60f8;
 }
 /* menuHrztal */
