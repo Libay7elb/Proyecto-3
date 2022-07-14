@@ -33,6 +33,7 @@ body{
     padding: 0 1em;
 }
 .logo-img{
+    margin: 0.1em 0;
     border-radius: 5em;
     height: 6em;
 }
