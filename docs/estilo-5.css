@@ -1,0 +1,702 @@
+body{
+    font-size: 20px; 
+ 
+}
+
+.contenedor-global{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(6,auto);
+    grid-template-areas: "menus menus"
+                         "imagen imagen"
+                         "descripcion descripcion"
+                         "datos datos"
+                         "piedepag piedepag"
+                         "menuFinal menuFinal";
+                         font-family: 'Varela Round', sans-serif;              
+}
+/* Header */
+/* Header */
+/* Header */
+/* Header */
+.header{
+    font-size: 20px;
+    grid-area: menus;
+    background-color: #025899;
+    font-family: 'Varela Round', sans-serif;
+}
+.lista{
+    display: flex;
+}
+.logo{
+    width: 50%;
+    padding: 0 1em;
+}
+.logo-img{
+    border-radius: 5em;
+    height: 6em;
+}
+.logo-cruz__responsive{
+    display: none;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    animation-name: animacion-izquierda;
+    animation-duration: 3s;
+}
+@keyframes animacion-izquierda{
+    0%{
+        transform: translateX(-70%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.menu-item{
+    list-style: none;
+}
+.menu-a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-a:hover{
+    color:#f673b5;
+    transition: 3s;
+}
+
+.icono-menu{
+    display: none;
+    cursor: pointer;
+    padding-right: 25px;
+}
+.barra{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+.logo-cruz__responsive{
+    display: none;
+}
+.redes-responsive{
+    display: none;
+}
+.titulo-responsive{
+    display: none;
+}
+/* Aspectos */
+/* Aspectos */
+/* Aspectos */
+
+.contenedor-imgs{
+    position: relative;
+    grid-area: imagen;
+    font-size: 20px;
+    overflow: hidden;
+    height:23em;
+}
+.contenedor-animado{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.contenedor-texto{
+  font-size: 20px;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0; 
+  z-index: 10;
+  background-color: #00000080;
+  text-align: center;
+}
+.texto-titulouno{
+    font-size: 2em;   
+}
+.texto-titulodos{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.li-imagen{
+    list-style: none;
+    width: 100%; 
+}
+.imgs-animadas{
+    width: 100%;
+    height: 100%;  
+}
+
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+.descripcion-contenedor{
+    grid-area: descripcion;
+    padding: 1em;
+    background: #d1eafb;
+}
+
+.parrafo-descripcion{
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 1em 0;
+    line-height: 1.3em;
+}
+/* DatosCuentas*/
+/* DatosCuentas*/
+/* DatosCuentas*/
+/* DatosCuentas*/
+
+.datoscuentas{
+    grid-area: datos;
+    background: #d1eafb;
+}
+.datos-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgs-datos{
+    min-width: 300px;
+    margin: 1em;
+    max-height: 500px;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+.footer{
+    grid-area: piedepag;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+   
+}
+.contenedor{
+    background-color: #1c1d1d;
+    display: flex;
+    flex-direction: row;
+}
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.img-footer{
+    border-radius: 5em;
+}
+.footer-datos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+.footer-datos i {
+    padding: 0 0.5em;
+}
+.footer-titulo{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+}
+.datos-descrip{
+    padding: 0.8em;
+    color: #fff;
+}
+.redes{
+    padding: 1em 0;
+    width: 30%;
+}
+.iconos-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.iconos-a{
+    text-decoration: none; 
+    padding: 0 0.5em;
+    text-align: center;
+    color: #fff
+}
+
+.iconos{
+    padding: 0.5em 0.5em;
+    font-size: 1.3em;
+    transition: 5s;
+}
+.iconos:hover{
+    background: #1c1d1d;
+    transition: 2s;
+}
+.tw{
+    background-color: #2076b7;
+}
+.fb{
+    background-color: #010f6e;
+
+}
+.insta{
+ 
+    background-color: #da60f8;
+}
+/* menuHrztal */
+/* menuHrztal */
+/* menuHrztal */
+.menu-footer{
+    grid-area: menuFinal;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+}
+.final-contenedor{
+    background-color: #025899;
+    height: auto;
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.menu-final{
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    padding: 1em 0;
+}
+.final-a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0em 1em;
+    font-size: 1.1em;    
+}
+
+.final-item:hover{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: -2px 0;
+}
+.final-parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding: 1em 0;
+
+}
+
+@media screen and (max-width:480px){
+
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+
+
+.parrafo-descripcion{
+    font-size: 0.8em;
+    text-align: center;
+}
+/* DatosCuentas*/
+/* DatosCuentas*/
+/* DatosCuentas*/
+/* DatosCuentas*/
+
+
+.imgs-datos{
+    min-width: 250px;
+    margin: 1em;
+    max-height: 500px;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+.footer{
+    font-size: 15px; 
+}
+.contenedor{
+  
+    flex-direction:column;
+}
+.logo-footer{
+    width: initial;
+    margin: 0.5em 0;
+}
+.strong-r{
+    display: flex;
+    justify-content: center;
+}
+.footer-datos i {
+    padding:0 0.3em;
+}
+.footer-datos{
+    width: initial;
+}
+
+.redes{
+    width: initial;
+}
+/* menuHrztal */
+/* menuHrztal */
+/* menuHrztal */
+.menu-footer{
+    font-size: 10px; 
+}
+.final-a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0em 0.5em;
+    font-size: 1.1em;  
+}
+/* Menu celular */
+/* Menu celular */
+/* Menu celular */
+/* Menu celular */
+    .logo{
+        width: 90%;
+    }
+    .icono-menu{
+        display:initial;
+        width: 10%;
+        margin: auto;
+    }
+    .menu{
+        position: fixed;
+        bottom:-100%;
+        z-index: 70;
+        display: flex;
+        flex-direction: column;
+        background-color:#025899;
+        width: 100%;
+        transition: 1s;
+        height:100%;
+        justify-content:initial;
+        overflow: hidden;
+        animation-name:none;
+    }
+    .menu.active{
+        bottom: 0;
+    }
+    .ocultar-foto{
+        opacity: 0;
+        transition: 0.8s;
+     }
+    .logo-cruz__responsive{
+        display: initial;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .logo-img-responsive{
+        border-radius: 5em;
+        height: 6em;
+        margin: 0.5em;
+        margin-left: 1em;
+    }
+    .cruz-responsive{
+        color: #fff;
+        padding-right: 1em;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .titulo-responsive{
+        width: 100%;
+        display: initial;
+        text-align: center;
+        color: #fff;
+        padding: 0.5em;
+        background-color: #025899;
+        outline: 1px solid #fff;
+    }
+    .menu-item{
+        list-style: none;
+        padding-left: 10px;
+        width: 100%;
+        transition: all 0.3s;
+        border-bottom: 1px solid #fff;
+      
+    }
+    .menu-a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 0.75em 0px
+    }
+    .menu-item:hover{
+        background: #2076b7;
+        border-left: 5px solid #d1eafb;
+    }
+   .redes-responsive{
+     display: initial;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 1em;
+   }
+   .redes-a{
+      color: #fff;
+      padding: 0 25px;
+      cursor: initial;
+   }
+   .redes-i{
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: all 1s;
+    
+   }
+   .fb-resp:hover{
+    color: rgb(4, 36, 101);
+    background-color: #fff;
+    border-radius: 40%;
+   }
+   .insta-resp:hover{
+    color: #f673b5;
+   }
+   .tw-resp:hover{
+    color: #0df9f9;
+   }    
+}
+
+@media screen and (min-width:480px) and (max-width:800px)  {
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+
+
+.parrafo-descripcion{
+    font-size: 0.8em;
+    text-align: inherit;
+}
+/* DatosCuentas*/
+/* DatosCuentas*/
+/* DatosCuentas*/
+/* DatosCuentas*/
+
+
+.imgs-datos{
+    min-width: 250px;
+    margin: 1em;
+    max-height: 500px;
+}
+
+
+
+/* Footer */
+/* Footer */
+/* Footer */
+
+ .contenedor{
+    background-color: #1c1d1d;
+    display: flex;
+    flex-direction: column;
+}
+.logo-footer{
+    margin: 1em 0;
+    width: initial;
+}
+
+.img-footer{
+    border-radius: 5em;
+}
+.footer-datos{
+    width: initial;
+    padding: 0em 0;
+}
+.footer-datos i {
+    padding: 0 0.5em;
+}
+.footer-titulo{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+}
+.datos-descrip{
+    padding: 0.8em;
+    color: #fff;
+}
+.tel-pantcortito{
+    text-decoration: none;
+    color: #ffff;
+}
+.redes{
+    width: initial;
+} 
+/* menuHrztal */
+/* menuHrztal */
+/* menuHrztal */
+
+.final-a{
+    padding: 0em 0.5em;
+    font-size: 0.9em;  
+}
+.final-parrafo{
+    font-size: 1em;
+}
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+/* Descripcion*/
+.lista-act{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style-position:inside;
+}
+/* Menu celular */
+/* Menu celular */
+/* Menu celular */
+/* Menu celular */
+    .logo{
+        width: 90%;
+    }
+    .icono-menu{
+        display:initial;
+        width: 10%;
+        margin: auto;
+    }
+    .menu{
+        position: fixed;
+        bottom:-100%;
+        z-index: 70;
+        display: flex;
+        flex-direction: column;
+        background-color:#025899;
+        width: 100%;
+        transition: 1s;
+        height:100%;
+        justify-content:initial;
+        overflow: hidden;
+        animation-name:none;
+    }
+    .menu.active{
+        bottom: 0;
+    }
+    .ocultar-foto{
+        opacity: 0;
+        transition: 0.8s;
+     }
+    .logo-cruz__responsive{
+        display: initial;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 0.5em;
+        
+    }
+    
+    .logo-img-responsive{
+        border-radius: 5em;
+        height: 6em;
+        margin: 0.5em;
+        margin-left: 1em;
+    }
+    .cruz-responsive{
+        color: #fff;
+        padding-right: 1em;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .titulo-responsive{
+        width: 100%;
+        display: initial;
+        text-align: center;
+        color: #fff;
+        padding: 0.5em;
+        background-color: #025899;
+        outline: 1px solid #fff;
+    }
+    .menu-item{
+        list-style: none;
+        padding-left: 10px;
+        width: 100%;
+        transition: all 0.3s;
+        border-bottom: 1px solid #fff;
+      
+    }
+    .menu-a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 0.75em 0px
+    }
+    .menu-item:hover{
+        background: #2076b7;
+        border-left: 5px solid #d1eafb;
+    }
+   .redes-responsive{
+     display: initial;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 1em;
+   }
+   .redes-a{
+       font-size: 10px;
+      color: #fff;
+      padding: 0 25px;
+      cursor: initial;
+   }
+   .redes-i{
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 1s;
+    
+   }
+   .fb-resp:hover{
+    color: rgb(4, 36, 101);
+    background-color: #fff;
+    border-radius: 40%;
+   }
+   .insta-resp:hover{
+    color: #f673b5;
+   }
+   .tw-resp:hover{
+    color: #0df9f9;
+   } 
+}
+
+@media screen and (min-width:800px) and (max-width:1200px){
+/* Header */
+/* Header */
+/* Header */
+/* Header */
+.logo{
+    width: 30%;
+    padding: 0 1em;
+}
+.menu{
+    width: 70%;
+}
+@keyframes animacion-izquierda{
+    0%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* Footer */
+/* Footer */
+/* Footer */
+.strong-r{
+    display: flex;
+    justify-content: center;
+}
+}
