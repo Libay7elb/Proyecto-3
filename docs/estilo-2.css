@@ -152,9 +152,7 @@ body{
 /* Descripcion*/
 .descripcion-contenedor{
     grid-area: descripcion;
-    padding: 10px 0;
-    /* width: 80%; */
-    padding: 2.5em;
+    padding: 0.5em;
     background: #d1eafb;;
 }
 .titulo-descripcion{
@@ -175,12 +173,11 @@ body{
 .lista-act{
     text-align: center;
     padding: 1em 0;
-   
-  
+    list-style:inside;
+    list-style-position: inside;
 }
 .items-list{
     padding: 0.4em; 
-    list-style-position:inside;
 }
 /* Footer */
 /* Footer */
@@ -327,9 +324,6 @@ body{
     }
     .lista-titulo{
         text-align: center;
-    }
-    .lista-act{
-    list-style-position:inside;
     }
     .items-list{
         padding: 0.4em;

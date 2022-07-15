@@ -151,7 +151,7 @@ body{
 /* Descripcion*/
 .descripcion-contenedor{
     grid-area: descripcion;
-    padding: 10px 0;
+    padding: 0.5em;
     background: #d1eafb;;
 }
 .titulo-descripcion{
