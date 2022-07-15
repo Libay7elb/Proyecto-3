@@ -301,6 +301,9 @@ body{
 }
 
 @media screen and (max-width:480px){
+    .logo-img{
+        margin: 0.3em 0;
+    }
 /* Descripcion*/
 /* Descripcion*/
 /* Descripcion*/
@@ -484,7 +487,10 @@ body{
 }
 
 @media screen and (min-width:480px) and (max-width:800px)  {
-    /* Footer */
+    .logo-img{
+        margin: 0.3em 0;
+    }
+/* Footer */
 /* Footer */
 /* Footer */
 

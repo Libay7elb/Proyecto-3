@@ -481,6 +481,10 @@ body{
 }
 
 @media screen and (max-width:480px) {
+    .logo-img{
+        margin: 0.3em 0;
+    
+    }
 /* Imgs */
 /* Imgs */
 /* Imgs */
@@ -721,6 +725,9 @@ body{
 }
 
 @media screen and (min-width:480px) and (max-width:800px)  {
+ .logo-img{
+    margin: 0.3em 0;
+}
 /* Imgs */
 /* Imgs */
 /* Imgs */
