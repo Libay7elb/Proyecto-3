@@ -167,10 +167,10 @@ body{
     padding: 0 1em;
 }
 .lista-act{
-    text-align: center;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    list-style-position:inside;
+    list-style: none;
 }
 .items-list{
     padding: 0.4em;
@@ -299,7 +299,11 @@ body{
 
 
 @media screen and (max-width:480px){
-
+    .lista-act{
+    width: 50%;
+    margin: auto;
+    text-align: inherit;
+    }
     .parrafo-descripcion{
         text-align: left;
     }
