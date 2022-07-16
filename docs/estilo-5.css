@@ -98,7 +98,7 @@ body{
     grid-area: imagen;
     font-size: 20px;
     overflow: hidden;
-    height:23em;
+    height:30em;
 }
 .contenedor-animado{
     display: flex;
