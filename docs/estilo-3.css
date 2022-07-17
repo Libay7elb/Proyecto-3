@@ -309,10 +309,12 @@ body{
     color: #fff;
     text-decoration: none;
     padding: 0em 1em;
-    font-size: 1.1em;    
+    font-size: 1.1em;     
 }
 .final-item:hover{
-    text-decoration:underline;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: -2px 0;
 }
 .final-parrafo{
     display: flex;
