@@ -22,7 +22,6 @@ body{
     font-size: 20px;
     grid-area: menus;
     background-color: #025899;
-    font-family: 'Varela Round', sans-serif;
 }
 .lista{
     display: flex;
@@ -109,11 +108,7 @@ body{
     overflow: hidden;
     height:30em;
 }
-.contenedor-animado{
-    display: flex;
-    width: 400%;
-    height: 100%;
-}
+
 .contenedor-animado{
     display: flex;
     width: 400%;
