@@ -12,7 +12,6 @@ function efectoScroll(){
     }
 }
 window.addEventListener("scroll",efectoScroll);
-//
 
 
 // Menu responsive
@@ -33,8 +32,29 @@ const cruzMenu = document.querySelector(".cruz-responsive");
         foto.classList.toggle("ocultar-foto");
 });
 
+// Efecto slider manual y automatico
 
+const contenedorAnimado = document.querySelector("#contenedor-animado");
+let  seccionesAnimadas = document.querySelectorAll(".seccion-animada");
+let  ultimaSeccionAnimada = seccionesAnimadas[seccionesAnimadas.length -1];
 
+contenedorAnimado.insertAdjacentElement('afterbegin',ultimaSeccionAnimada);
+
+const moverDerecha = ()=>{
+    let ultimaSeccionAnimada = document.querySelectorAll(".seccion-animada")[0];
+    contenedorAnimado.style.marginLeft= "-200%";
+    contenedorAnimado.style.transition= "all 2s";
+
+setTimeout(()=>{
+    contenedorAnimado.style.transition="none";
+    contenedorAnimado.insertAdjacentElement('beforeend',ultimaSeccionAnimada);
+    contenedorAnimado.style.marginLeft="-100%"; 
+},2000);
+}
+
+setInterval(()=>{
+    moverDerecha()
+},5000)
 
 
 

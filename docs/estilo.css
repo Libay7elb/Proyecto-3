@@ -118,9 +118,20 @@ body{
     display: flex;
     width: 400%;
     height: 100%;
-    -webkit-animation: animacion-uno 20s infinite alternate;
-            animation: animacion-uno 20s infinite alternate;
+    margin-left: -100%;
 }
+.seccion-animada{
+    width: 100%;
+}
+
+.imgs-animadas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
 .contenedor-texto{
   font-size: 20px;
   position: absolute;
@@ -155,46 +166,10 @@ body{
     background-color: #2076b7;
     transition: 2s;
 }
-.li-imagen{
-    list-style: none;
-    width: 100%;   
-}
-.imgs-animadas{
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
 
-@-webkit-keyframes animacion-uno{
 
-    0%{margin-left: 0;}
-    20%{margin-left:0;}
 
-    30%{margin-left: -100%;}
-    50%{margin-left: -100%;}
 
-    60%{margin-left: -200%;}
-    80%{margin-left: -200%;}
-
-    90%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
-@keyframes animacion-uno{
-
-    0%{margin-left: 0;}
-    20%{margin-left:0;}
-
-    30%{margin-left: -100%;}
-    50%{margin-left: -100%;}
-
-    60%{margin-left: -200%;}
-    80%{margin-left: -200%;}
-
-    90%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
 /* Aspectos */
 /* Aspectos */
 /* Aspectos */
