@@ -1,7 +1,19 @@
-
+// Declaracion de varialbes para las diferentes funcionalidades
+// Menu responsive
+const linitasHorizontal = document.querySelector(".icono-menu");
+const navMenu = document.querySelector(".menu");
+const foto = document.querySelector(".logo");
+// Efecto slider manual y automatico
+const contenedorAnimado = document.querySelector("#contenedor-animado");
+let  seccionesAnimadas = document.querySelectorAll(".seccion-animada");
+let  ultimaSeccionAnimada = seccionesAnimadas[seccionesAnimadas.length -1];
 // Efecto scroll para mostrar texto
 let efectoAparecer = document.querySelectorAll(".efecto-java");
+// ---------------------------------------------------------------------------------------------
 
+
+// Funcionalidades:
+// Efecto scroll para mostrar texto
 function efectoScroll(){
     let scrollTop = document.documentElement.scrollTop;
     for(let i =0;i < efectoAparecer.length ; i++){
@@ -12,32 +24,19 @@ function efectoScroll(){
     }
 }
 window.addEventListener("scroll",efectoScroll);
-
-
 // Menu responsive
-const linitasHorizontal = document.querySelector(".icono-menu");
-const navMenu = document.querySelector(".menu");
-const foto = document.querySelector(".logo");
-
 linitasHorizontal.addEventListener("click",(e)=>{
     document.body.style.overflow = "hidden"
     navMenu.classList.toggle("active");
     foto.classList.toggle("ocultar-foto");
 });
-
 const cruzMenu = document.querySelector(".cruz-responsive");
         cruzMenu.addEventListener("click",()=>{
         document.body.style.overflow = "initial"
         navMenu.classList.toggle("active");
         foto.classList.toggle("ocultar-foto");
 });
-
 // Efecto slider manual y automatico
-
-const contenedorAnimado = document.querySelector("#contenedor-animado");
-let  seccionesAnimadas = document.querySelectorAll(".seccion-animada");
-let  ultimaSeccionAnimada = seccionesAnimadas[seccionesAnimadas.length -1];
-
 contenedorAnimado.insertAdjacentElement('afterbegin',ultimaSeccionAnimada);
 
 const moverDerecha = ()=>{
